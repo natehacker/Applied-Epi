@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 1px solid black;
+    }
+
+    .cl{
+color: rgb(0, 0, 0);
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showPopup()">Show Pop-up</button>
+  
+  <div id="popupDiv" class="popup" style="display: none;">
+    <!-- Content for the pop-up -->
+    <h2>Case Management Systems</h2>
+    <p><br><br> Medical examiner and coroner (MEC) offices often used software-based case management systems (CMS) to collect, organize, and store case-related data. MEC office staff enter case-related data using
+        standardized variables or forms to create a uniform data set that can be queried or analyzed. Depending on the features of the software, these systems can also be used to facilitate data sharing with stakeholders, such as law enforcement
+        or public health.
+</p>
+<p> <a href="https://www.nist.gov/system/files/documents/2021/07/14/MDI%20data%20commonly%20collected%20and%20exchanged_REFERENCE_07092021_0.pdf" target="_blank">MDI data commonly collected and exchanged_REFERENCE_07092021_0.pdf (nist.gov)</a>
+
+    <br><br>
+
+    <a href="https://forensiccoe.org/private/63da9032991eb" target="_blank">Data Exchange Practices of Medicolegal Death Investigation (forensiccoe.org)</a> For a list of Medicolegal Death Investigation (MDI) Common Data Elements, see Appendix
+    B
+
+    <br><br>
+
+    <a href="https://forensiccoe.org/electronic-case-management-system-mdi/" target="_blank">A Landscape Study of Electronic Case Management Systems for Medical Examiners and Coroners Forensic Technology Center of Excellence (forensiccoe.org)</a>.</p>
+    <button  class="cl" onclick="closePopup()">Close</button>
+  </div>
+
+  <script>
+    function showPopup() {
+      var popupDiv = document.getElementById('popupDiv');
+      popupDiv.style.display = 'block';
+    }
+
+    function closePopup() {
+      var popupDiv = document.getElementById('popupDiv');
+      popupDiv.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
