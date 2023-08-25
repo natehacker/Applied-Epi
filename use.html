@@ -180,65 +180,18 @@ button {
     border-color: none;
     border-image: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
 }
 
-
-
-
 .popup {
-   
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: rgb(141, 191, 228);
+      background-color: white;
       padding: 20px;
       border: 1px solid black;
-      z-index: 1;
-      border-radius:20px ;
    
 }
-
-.popup1{
-  position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgb(141, 191, 228);
-      padding: 20px;
-      border: 1px solid black;
-      z-index: 1;
-      border-radius:20px ;
-      width:80%;
-}
-
-.popup2{
-  position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgb(141, 191, 228);
-      padding: 20px;
-      border: 1px solid black;
-      z-index: 1;
-      border-radius:20px ;
-      width:80%;
-}
-
-.popup3{
-  position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgb(141, 191, 228);
-      padding: 20px;
-      border: 1px solid black;
-      z-index: 1;
-      border-radius:20px ;
-      width:80%;
-}
-
 
 #myDIV2 {
     width: 825px;
@@ -554,8 +507,6 @@ button {
         <div class="wrapper">
             <div id="popupDiv" class="popup" style="display: none;">
                 <!-- Content for the pop-up -->
-                <div id="myModal" class="modal">
-                <div class="modal-content">
                 <h2>Case Management Systems</h2>
                 <p><br><br> Medical examiner and coroner (MEC) offices often used software-based case management systems (CMS) to collect, organize, and store case-related data. MEC office staff enter case-related data using
                     standardized variables or forms to create a uniform data set that can be queried or analyzed. Depending on the features of the software, these systems can also be used to facilitate data sharing with stakeholders, such as law enforcement
@@ -571,16 +522,12 @@ button {
                 <br><br>
             
                 <a href="https://forensiccoe.org/electronic-case-management-system-mdi/" target="_blank">A Landscape Study of Electronic Case Management Systems for Medical Examiners and Coroners Forensic Technology Center of Excellence (forensiccoe.org)</a>.</p>
-                <button  onclick="closePopup()">close</button>
-                </div>
+                <button  class="cl" onclick="closePopup()">Close</button>
               </div>
         </div>
-    </div>
 
         <div class="wrapper">
-            <div id="popupDiv1" class="popup1" style="display: none;">
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
+            <div id="myDIV2" onclick="closewords2()">
                 <b>Data Visualization and Dashboards</b>
 
                 <br><br> Many medical examiner and coroner (MEC) offices use data visualization techniques and dashboards to enhance the use of medicolegal death investigation (MDI) data to learn about the patterns of the different types of deaths occurring
@@ -596,16 +543,13 @@ button {
                 <a href="https://kingcounty.gov/depts/health/examiner/services/reports-data/overdose.aspx" target="_blank">Overdose deaths - King County</a><br>
 
                 <a href="https://ccbh.net/overdose-data-dashboard/" target="_blank">Overdose Data Dashboard – Cuyahoga County</a>
-                <button   onclick="closePopup1()">Close</button>
 
             </div>
         </div>
-            </div>
 
-            <div id="popupDiv2" class="popup2" style="display: none;">
-                <!-- Content for the pop-up -->
-                <div id="myModal" class="modal">
-                <div class="modal-content">
+        <div class="wrapper">
+            <div id="myDIV3" onclick="closewords3()">
+                <b>Death Certification Guidance </b>
 
                 <br><br> Medical examiners and coroners (MECs) are responsible for determining the cause and manner 
                 of death of decedents. Though state statutes vary, in general, MECs investigate sudden and unexpected deaths, 
@@ -639,16 +583,14 @@ button {
                 <br><br><a href="https://name.memberclicks.net/assets/docs/MANNEROFDEATH.pdf" target="_blank">NAME guide for manner of death classification </a>
                 <br><br><a href="https://name.memberclicks.net/death-certification" target="_blank">NAME guide for Death Certification</a>
 
-                <button  onclick="closePopup2()">Close</button>
+
             </div>
         </div>
-    </div>
 
-    <div id="popupDiv3" class="popup3" style="display: none;">
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-        <b>Data Visualization and Dashboards</b>
-   
+        <div class="wrapper">
+            <div id="myDIV4" onclick="closewords4()">
+               <b> 
+                Drug Overdose </b>
 
      <br><br> Over the past two decades, drug overdose deaths have risen five-fold. Deaths resulting from drug overdose/toxicity have 
               contributed significantly to the workload of medical examiner and coroners (MECs), as these deaths generally require medicolegal death investigation 
@@ -676,15 +618,12 @@ button {
 
                 <br><br> <a href="https://www.cdc.gov/nchs/nvss/vsrr/provisional-drug-overdose.htm" target="_blank">Products - Vital Statistics Rapid Release - Provisional Drug Overdose Surveillance (cdc.gov)</a>
                 <br><br> <a href="https://www.cste.org/general/custom.asp?page=DrugOVDDeaths" target="_blank">Drug Overdose Deaths - Council of State and Territorial Epidemiologists (cste.org) </a>
-                <button  onclick="closePopup3()">Close</button>
-        </div>
-        </div>
-    </div>
 
-        <div id="popupDiv4" class="popup" style="display: none;">
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <b>Drug Overdose</b>
+        </div>
+
+        <div class="wrapper">
+            <div id="myDIV5" onclick="closewords5()">
+                <b>Annual Reports</b>
 
                 <br><br> Many medical examiner and coroner (MEC) offices produce annual reports describing the work of the office and highlighting the types of deaths occurring in their jurisdiction. Annual reports are required for accreditation by the
                 National Association of Medical Examiners (NAME) and by the International Association of Coroners and Medical Examiner (IACME).
@@ -726,14 +665,12 @@ button {
                 <a href="https://cuyahogacms.blob.core.windows.net/home/docs/default-source/me-library/statisticalreports/2020statisticalreport.pdf?sfvrsn=4ed37ac2_4" target="_blank">Cuyahoga County 2020 Medical Examiner's Statistical Report</a><br>
 
                 <a href="https://hsc.unm.edu/omi/2020-annualreport-.pdf" target="_blank">New Mexico 2020-annualreport-.pdf</a><br>
-                <button  id="cl" onclick="closePopup4()">Close</button>
             </div>
         </div>
-        </div>
 
-        <div id="popupDiv2" class="popup" style="display: none;">
-            <div id="myModal" class="modal">
-                <div class="modal-content">
+        <div class="wrapper">
+            <div id="myDIV6" onclick="closewords6()">
+                <b>Fatality</b>
 
                 <br><br> Fatality review is a process that involves a multidisciplinary team that reviews the details of individual deaths to help communities understand why the death occurred and to identify possible interventions to prevent similar
                 fatalities in the future. The multidisciplinary teams include members from many disciplines, such as public health, the medical profession, coroners and medical examiners, law enforcement, social services, schools, pharmacists, traffic
@@ -768,13 +705,13 @@ button {
                 <a href="https://cohealthviz.dphe.state.co.us/t/PSDVIP-MHPPUBLIC/views/CFPSDashboardFinalLocal/Story1?iframeSizedToWindow=true&%3Aembed=y&%3AshowAppBanner=false&%3Adisplay_count=no&%3AshowVizHome=no" target="_blank">Colorado Child Fatality Review Dashboard</a>                <br>
 
                 <br><br>
-</div>
+
             </div>
         </div>
 
-        <div id="popupDiv3" class="popup" style="display: none;">
-            <div id="myModal" class="modal">
-                <div class="modal-content">
+        <div class="wrapper">
+            <div id="myDIV7" onclick="closewords7()">
+                <b>Coding and Case Definitions </b>
 
                 <br><br> Some medical examiners and coroners (MECs) use data coded using the International Classification of Diseases, Tenth Revision (ICD-10) for selecting specific subsets of deaths. The use of standardized case definitions allows uniform comparison of cases among jurisdictions. 
                 The Centers for Disease Control and Prevention (CDC) and the National Center for Health Statistics (NCHS) have developed standard case definitions for several causes of death. The links below provide recommendations and guidance for the coding of death certificates and other mortality data, and for standardization of case definitions to identify specific subsets of deaths: 
@@ -819,12 +756,12 @@ button {
                 <br><br><a href="https://journals.lww.com/amjforensicmedicine/Abstract/2022/03000/Training_Death_Investigators_to_Identify.9.aspx" target="_blank">Training Death Investigators to Identify Decedents' Sexual Orientation and Gender Identity </a>
               
 
-            </div>
+              
             </div>
         </div>
-        <div id="myDIV9" onclick="closewords9()">
+
         <div class="wrapper">
-         
+            <div id="myDIV9" onclick="closewords9()">
                 Annual Reports
 
                 <br><br> Many medical examiner and coroner (MEC) offices produce annual reports describing the work of the office and highlighting the types of deaths occurring in their jurisdiction. Annual reports are required for accreditation by the
@@ -844,7 +781,6 @@ button {
         </div>
 
         <div class="wrapper">
-          <div id="Div10" class="overdose" style="display: none;">
             <div id="myDIV10" onclick="closewords10()">
                 Annual Reports
 
@@ -863,7 +799,6 @@ button {
                 County TX 2021 Annual Report<br> Orange County Coroner Annual Report 2021<br> King County WA Medical Examiner's 2021 Annual Report<br> Maricopa County | Office of the Medical Examiner | 2021 Annual Report<br> Iowa OCME 2021 annual report<br>                Cuyahoga County 2020 Medical Examiner's Statistical Report<br> New Mexico 2020-annualreport-.pdf<br>
             </div>
         </div>
-        </div>
 
         <!--Middle Squares-->
         <div class="wrapper">
@@ -872,6 +807,7 @@ button {
                 <div class="squarebuttonsleft">
 
                     <button class="btn" onclick="showPopup()">
+  
                         <div class="res 1">
                             <div class="restxt1">
                                 Case Management Software 
@@ -879,30 +815,28 @@ button {
                         </div>  
                     </button>
 
-                    <button class="btn" onclick="showPopup2()">
-  
-                        <div class="res 1">
-                            <div class="restxt1">
+                    <button onclick="myFunction2()">
+                        <div class="res 2">
+                            <div class="restxt2">
                                 Data Visualization/Dashboards 
                             </div>
-                        </div>  
+                        </div>
                     </button>
 
-                    <button class="btn" onclick="showPopup3()">
-                        <div class="res 1">
-                            <div class="restxt1">
-                                Death Certification Guidance
+                    <button onclick="myFunction3()">
+                        <div class="res 3">
+                            <div class="restxt3">
+                                Death Certification Guidance 
                             </div>
-                        </div>  
+                        </div>
                     </button>
 
-                    <button class="btn" onclick="showPopup4()">
-  
-                        <div class="res 1">
-                            <div class="restxt1">
-                                Drug overdose
+                    <button onclick="myFunction4()">
+                        <div class="res 4">
+                            <div class="restxt4">
+                                Drug Overdose
                             </div>
-                        </div>  
+                        </div> 
                     </button>
 
                 </div>
@@ -910,40 +844,36 @@ button {
 
                 <div class="squarebuttonsright">
 
-                    <button class="btn" onclick="showPopup5()">
-  
-                        <div class="res 1">
-                            <div class="restxt1">
-                                Annual Reports
+                    <button onclick="myFunction5()">
+                        <div class="res 5">
+                            <div class="restxt5">
+                                Annual Reports 
                             </div>
-                        </div>  
+                        </div> 
                     </button>
 
-                    <button class="btn" onclick="showPopup6()">
-  
-                        <div class="res 1">
-                            <div class="restxt1">
-                                Fatality Review Teams
+                    <button onclick="myFunction6()">
+                        <div class="res 6">
+                            <div class="restxt6">
+                                Fatality Review Teams 
                             </div>
-                        </div>  
+                        </div>
                     </button>
 
-                    <button class="btn" onclick="showPopup7()">
-  
-                        <div class="res 1">
-                            <div class="restxt1">
-                                Coding And Case Definition
+                    <button onclick="myFunction7()">
+                        <div class="res 7">
+                            <div class="restxt7">
+                                Coding and Case Definitions 
                             </div>
-                        </div>  
+                        </div>
                     </button>
 
-                   <button class="btn" onclick="showPopup8()">
-  
-                        <div class="res 1">
-                            <div class="restxt1">
-                           Suicide
+                    <button onclick="myFunction8()">
+                        <div class="res 8">
+                            <div class="restxt8">
+                                Suicide 
                             </div>
-                        </div>  
+                        </div>
                     </button>
 
                 </div>
@@ -952,7 +882,15 @@ button {
 
 
         <script>
-          //1
+            // /*Funtions to bring up words on click*/
+            // function myFunction() {
+            //     var x = document.getElementById("myDIV");
+            //     if (x.style.display === "none") {
+            //       x.style.display = "block";
+            //     } else {
+            //       x.style.display = "none";
+            //     }
+            // }
             function showPopup() {
       var popupDiv = document.getElementById('popupDiv');
       popupDiv.style.display = 'block';
@@ -961,45 +899,33 @@ button {
       var popupDiv = document.getElementById('popupDiv');
       popupDiv.style.display = 'none';
     }
-    //2
-    function showPopup2() {
-      var popupDiv = document.getElementById('popupDiv1');
-      popupDiv.style.display = 'block';
-    }
-    function closePopup1() {
-      var popupDiv = document.getElementById('popupDiv1');
-      popupDiv.style.display = 'none';
-    }
-            //3
-            function showPopup3() {
-      var popupDiv = document.getElementById('popupDiv2');
-      popupDiv.style.display = 'block';
-    }
-    function closePopup2() {
-      var popupDiv = document.getElementById('popupDiv2');
-      popupDiv.style.display = 'none';
-    }
-    
-    //4
-    function showPopup5() {
-      var popupDiv = document.getElementById('popupDiv10');
-      popupDiv.style.display = 'block';
-    }
-    function closePopup4() {
-      var popupDiv = document.getElementById('popupDiv4');
-      popupDiv.style.display = 'none';
-    }
-    
-    function showPopup4() {
-      var popupDiv = document.getElementById('overdose');
-      popupDiv.style.display = 'block';
-    }
-    function closePopup4() {
-      var popupDiv = document.getElementById('Div10');
-      popupDiv.style.display = 'none';
-    }
             
+            function myFunction2() {
+                var x = document.getElementById("myDIV2");
+                if (x.style.display === "none") {
+                  x.style.display = "block";
+                } else {
+                  x.style.display = "none";
+                }
+            }
             
+            function myFunction3() {
+              var x = document.getElementById("myDIV3");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            
+            function myFunction4() {
+              var x = document.getElementById("myDIV4");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
             
             function myFunction5(){
               var x = document.getElementById("myDIV5");

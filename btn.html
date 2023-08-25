@@ -15,10 +15,26 @@
     .cl{
 color: rgb(0, 0, 0);
     }
+
+    .btn{
+      background: #639EC8;
+    width: 446px;
+    height: 72px;
+    margin-bottom: 26px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    cursor: pointer;
+    }
   </style>
 </head>
 <body>
-  <button onclick="showPopup()">Show Pop-up</button>
+  <button class="btn" onclick="showPopup()">Case Management Systems</button>
   
   <div id="popupDiv" class="popup" style="display: none;">
     <!-- Content for the pop-up -->
@@ -45,7 +61,6 @@ color: rgb(0, 0, 0);
       var popupDiv = document.getElementById('popupDiv');
       popupDiv.style.display = 'block';
     }
-
     function closePopup() {
       var popupDiv = document.getElementById('popupDiv');
       popupDiv.style.display = 'none';
